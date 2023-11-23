@@ -1,7 +1,16 @@
-# Vue 3 + Vite
+# AutoCaptcha
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+AutoCaptcha is a solution for automating the process of filling in captcha forms based on manifest V3. It allows users to easily set the classname, id, or query selector of captcha-related elements in order to automatically complete the captcha filling process.
 
-## Recommended IDE Setup
+Here's how to use AutoCaptcha:
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+1. Download and install the required dependencies, then build the dist file using the following commands:
+
+
+```bash
+npm install
+npm run build
+```
+2. Import the built dist file into your browser extension. The specific method may vary depending on the browser you are using.
+3. Open the browser extension configuration page and enter the unique identifier for the captcha-related element(s): ID, ClassName, or QuerySelector. For example, if the unique identifier is the classname, enter the classname value in the corresponding field to automatically fill in the captcha form.
+
